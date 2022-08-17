@@ -1,37 +1,74 @@
-@font-face {
-    font-family: 'KyoboHand';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@1.0/KyoboHand.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+* {
+  margin: 0;
+  padding: 0;
+ }
+
+#root {
+  height: 100%;
 }
 
-html {
-	font-size: 20px;
-	font-family: 'KyoboHand';
-	line-height: 1.6;
+html, body {
+  height: 100%;
 }
-h1 {
-	color: white;
-	background: mediumpurple;
+
+img {
+  max-width: 100%;
 }
-h1 a {
-	font-size: 0.8rem;
-	color: white;
+
+.header {
+  height: 20%;
+  width: 100%;
+  background-color: #CB5A73;
 }
-a {
-	color: mediumpurple;
+
+.body-main {
+  height: 60%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
 }
-footer {
-	margin-top: 2rem;
-	padding: 1rem 0;
-	border-top: 3px dashed mediumpurple;
+
+.body-left {
+  box-sizing: border-box;
+  padding: 2%;
+  width: 70%;
+  height: 100%;
+  background-color: #68BCDA;
 }
-.go-to-content {
-	display: block;
-	position: absolute;
-	left: -1000rem;
-	top: 0;
+
+.color-name {
+  color: #fff;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  text-align: center;
+
 }
-.go-to-content:focus {
-	position: static;
+
+.hello-image {
+  width: 100%;
+}
+
+.body-right {
+  width: 30%;
+  height: 100%;
+  background-color: #E1A85A;
+}
+
+.footer {
+  background-color: #4D9688;
+  width: 100%;
+  height: 20%;
+}
+
+@media only screen and (max-width: 650px) {
+  .body-main {
+    flex-direction: column;
+  }
+  .body-left {
+    width: 100%;
+  }
+  .body-right {
+    width: 100%;
+  }
 }

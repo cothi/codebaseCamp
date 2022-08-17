@@ -4,12 +4,16 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "start": "nodemon -e js,html server.js"
+    "start": "nodemon -e * server.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^4.18.1",
+    "live-server": "^1.2.2",
     "nodemon": "^2.0.19"
+  },
+  "nodemonConfig": {
+    "ext": "js,html"
   }
 }
